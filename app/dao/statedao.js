@@ -17,6 +17,9 @@ class TypeDao {
         })
     }
 
+    sendHTML(req, res) {
+        res.sendFile('../../callback.html')
+    }
 }
 
 module.exports = TypeDao;

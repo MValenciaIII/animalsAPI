@@ -11,4 +11,8 @@ router.get('/', (req, res) => {
     dao.findAll(req, res);
 })
 
+router.get('/callback', (req, res) => {
+    dao.sendHTML(req, res);
+})
+
 module.exports = router;
